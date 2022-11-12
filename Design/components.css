@@ -1,0 +1,62 @@
+/* Button */
+.btn
+{
+    background-color: var(--identity);
+    border-radius: 3px;
+    border: 2px solid var(--identity);
+    color: var(--white);
+    padding: 0.8em 1em;
+    text-decoration: none;
+    outline: none;
+    transition: var(--transition);
+}
+.btn:hover
+{
+    background-color: #ba1435;
+    border: 2px solid var(--identity);
+    color: var(--white);
+    transition: var(--transition);
+    opacity: 0.8;
+    transform: translateX(10px);
+}
+#link
+{
+    color: var(--identity);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+#link:hover
+{
+    text-decoration: none;
+}
+.section
+{
+    padding-top: 8em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.title h2
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+    color: var(--black);
+}
+.section #block
+{
+    padding: 8em;
+}
+.section #text p
+{
+    line-height: 1.8;
+    color: var(--muted);
+}
+.footer p
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    border-top: 1px solid #f1f1f1;
+}

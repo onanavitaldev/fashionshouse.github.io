@@ -1,0 +1,207 @@
+/* Design By ONANA vital or NobiQ */
+
+/* Variables */
+:root
+{
+    --identity: #e12046;
+    --white: #fffdfd;
+    --black: #1a202c;
+    --muted: #1a202c;
+    --family: Montserrat;
+    --transition: all 0.4s ease-in 0s;
+}
+
+/* Window of Browser */
+*
+{
+    background-color: var(--white);
+    transition: var(--transition);
+    scroll-behavior: smooth;
+}
+*::selection
+{
+    background-color: var(--identity);
+}
+
+/* HtmlDocument */
+
+/* Body of document */
+body
+{
+    font-family: var(--family);
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar
+{
+    background-color: var(--white);
+    border-bottom: 0.5px solid #f1f1f1;
+    display: flex;
+    /* opacity: 1; */
+    position: fixed;
+    right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+.navbar .logo img
+{
+    height: 65px;
+}
+.navbar .link
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+.navbar .link a
+{
+    color: var(--muted);
+    text-decoration: none; 
+    margin: 12px;
+    transition: var(--transition);
+}
+.navbar .link a svg
+{
+    fill: var(--muted);
+}
+.navbar .btn
+{
+    color: #fff;
+}
+.navbar .link a svg:hover
+{
+    fill: var(--identity);
+}
+.navbar .link a:hover
+{
+    color: var(--identity);
+    text-decoration: underline;
+}
+
+/* Haeder */
+.header
+{
+    text-align: center;
+    padding-top: 23em;
+    padding-bottom: 23em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.859) 60%,
+    rgba(0, 0, 0, 0.859)), url('../Img/img\ \(2\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header .center
+{
+    background: transparent;
+}
+.header .center h1
+{
+    background: transparent;
+    font-family: cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1.9;
+    animation: fadeInDown 1s;
+}
+.header .center p
+{
+    color: var(--white);
+    background: transparent;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.px-10
+{
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin: 1em;
+    transition: all 0.4s ease-in 0s;
+}
+.px-10:hover
+{
+    transform: scale(1.1);
+}
+/* Form */
+.forms
+{
+    background-color: var(--identity);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+}
+.forms .form-box
+{
+    border-radius: 10px;
+    padding: 3em;
+    padding-right: 3em;
+    text-align: left;
+    background-color: var(--white);
+    width: 40%;
+}
+.forms .form-box .form-title h2
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.forms .form-box .form-label
+{
+    display: block;
+    width: 100%;
+}
+.forms .form-box .form-label input
+{
+    width: 100%;
+    padding: 0.8em 1em;
+    caret-color: var(--identity);
+    border: 0.7px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+}
+.forms .form-box .form-label textarea
+{
+    resize: none;
+    width: 100%;
+    padding: 0.8em 1em;
+    caret-color: var(--identity);
+    border: 0.7px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+    height: 25vh;
+}
+.forms .form-box .form-label textarea:focus,
+.forms .form-box .form-label input:focus
+{
+    border: 0.7px solid var(--identity);
+}
+.forms .form-box .form-label button
+{
+    background-color: var(--identity);
+    outline: none;
+    border: none;
+    padding: 0.8em 1em;
+    color: var(--white);
+    border-radius: 5px;
+}
+.forms #ind
+{
+    margin-top: 15px;
+}
+.form #ind a
+{
+    text-decoration: underline;
+    color: var(--identity);
+}
